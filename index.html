@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NORTH ROLEPLAY - لوحة المعلومات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- رأس الصفحة -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">🎮 THE NORTH ROLEPLAY</h1>
+                <div class="server-info">
+                    <span class="player-count" id="playerCount">0 / 512</span>
+                    <span class="server-status online">● متصل</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- قسم البحث والفلاتر -->
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-box" placeholder="ابحث عن لاعب...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="admin">المسؤولين</button>
+                <button class="filter-btn" data-filter="vip">VIP</button>
+                <button class="filter-btn" data-filter="online">متصل</button>
+            </div>
+        </div>
+
+        <!-- جدول اللاعبين -->
+        <div class="table-wrapper">
+            <table class="players-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اسم الشخصية</th>
+                        <th>الرتبة</th>
+                        <th>الحالة</th>
+                        <th>الساعات</th>
+                        <th>البنج</th>
+                        <th>الاتصال</th>
+                    </tr>
+                </thead>
+                <tbody id="playersTableBody">
+                    <!-- سيتم ملء الجدول بـ JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- قسم التصفح -->
+        <div class="pagination">
+            <button class="pagination-btn" id="prevBtn">← السابق</button>
+            <span class="page-info" id="pageInfo">الصفحة 1 من 1</span>
+            <button class="pagination-btn" id="nextBtn">التالي →</button>
+        </div>
+
+        <!-- التذييل -->
+        <footer class="footer">
+            <p>© 2026 The North Roleplay - جميع الحقوق محفوظة</p>
+            <p>لأسئلة أو مشاكل: <a href="mailto:support@thenorth.com">support@thenorth.com</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
